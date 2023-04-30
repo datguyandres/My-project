@@ -5,6 +5,7 @@ using UnityEngine;
 public class CoinCollecting : MonoBehaviour
 {
 public GameObject player;
+public GameObject AudioHandler;
 void OnTriggerEnter(Collider collision)
     {
         
@@ -15,6 +16,7 @@ void OnTriggerEnter(Collider collision)
             Object.Destroy(gameObject);
             player.GetComponent<PlayerScore>().AddScore();
            
+           AudioHandler.GetComponent<WeDoALittleAudioHandling>().playcoinPickup();
            Debug.Log("Do something here");
         }
 

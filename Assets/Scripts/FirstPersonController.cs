@@ -52,6 +52,8 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		public GameObject AudioHandler;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -217,6 +219,7 @@ namespace StarterAssets
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					AudioHandler.GetComponent<WeDoALittleAudioHandling>().PlayjumpSound();
 				}
 
 				// jump timeout

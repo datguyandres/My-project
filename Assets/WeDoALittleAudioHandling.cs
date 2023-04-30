@@ -24,6 +24,7 @@ public class WeDoALittleAudioHandling : MonoBehaviour
 	    OSCHandler.Instance.Init ();
         OSCHandler.Instance.SendMessageToClient("pd", "/unity/trigger", "ready");
         //*************
+		//OSCHandler.Instance.SendMessageToClient("pd", "/unity/BGM", 1); bgm would go here
 
         
     }
@@ -49,6 +50,16 @@ public class WeDoALittleAudioHandling : MonoBehaviour
 			}
 		}
 		//*************
+	}
+
+	public void playcoinPickup(){
+		// trigger noise burst whe hitting a wall.
+        // OSCHandler.Instance.SendMessageToClient("pd", "/unity/PickUpCoin", 1);
+	}
+
+	public void PlayjumpSound(){
+		//trigger noise burst whe hitting a wall.
+        // OSCHandler.Instance.SendMessageToClient("pd", "/unity/Jump", 1);
 	}
 
 
