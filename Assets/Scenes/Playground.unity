@@ -480,6 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 24024290}
   - component: {fileID: 24024289}
+  - component: {fileID: 24024291}
   m_Layer: 0
   m_Name: audiohandler
   m_TagString: Untagged
@@ -516,6 +517,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &24024291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24024288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03c7f4e823330446a1a993371ed370e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inPort: 6969
+  outIP: 127.0.0.1
+  outPort: 6161
 --- !u!1 &186380668
 GameObject:
   m_ObjectHideFlags: 0
@@ -10158,21 +10174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerscore: 0
---- !u!114 &135756641613574982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490996584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c03c7f4e823330446a1a993371ed370e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inPort: 6969
-  outIP: 127.0.0.1
-  outPort: 6161
 --- !u!1 &2114283753834967212
 GameObject:
   m_ObjectHideFlags: 0
